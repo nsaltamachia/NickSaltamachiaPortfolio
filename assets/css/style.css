@@ -167,7 +167,7 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 150px;
   height: 5px;
   background-color: #0078ff;
   margin: 0 auto;
@@ -918,7 +918,7 @@ a:hover {
 .counter-box {
   color: #fff;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 577px) {
@@ -946,6 +946,23 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+    
+}
+.video gallery iframe {
+  justify-self: center;
+  margin: 0;
+}
+
+.slider {
+    width: 80%;
+    margin: auto;
+}
+
+
 .work-box {
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
