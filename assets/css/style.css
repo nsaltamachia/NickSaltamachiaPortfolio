@@ -952,15 +952,56 @@ a:hover {
   flex-wrap: wrap;
     
 }
-.video gallery iframe {
+.video-gallery iframe {
   justify-self: center;
   margin: 0;
 }
 
 .slider {
-    width: 80%;
+  position: relative;
+    width: 100%;
     margin: auto;
+    overflow: hidden;
 }
+
+.slider img {
+  width: 100%;
+  display: none;
+}
+
+img.displaySlide {
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s; ;
+}
+
+.slide {
+  width: 300px;
+  height: 300px;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  font-size: 2rem;
+  padding: 10px 15px;
+  background-color: hsla(0, 0%, 0%, .5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.previous {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
 
 
 .work-box {

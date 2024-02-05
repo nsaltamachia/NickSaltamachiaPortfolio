@@ -13,10 +13,7 @@
     <link href="assets/img/N.png" rel="apple-touch-icon" />
 
     <!-- Vendor CSS Files -->
-    <!-- Include Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="path-to-your-slick/slick.css"/>
-    <!-- Include Slick theme CSS (optional) -->
-    <link rel="stylesheet" type="text/css" href="path-to-your-slick/slick-theme.css"/>
+    
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
       rel="stylesheet"
@@ -530,10 +527,14 @@
               </div>
 
               <div class="slider">
-                  <div><img src="image1.jpg" alt="Image 1"></div>
-                  <div><img src="image2.jpg" alt="Image 2"></div>
-                  <div><img src="image3.jpg" alt="Image 3"></div>
-                  <!-- Add more slides as needed -->
+                <div class="slides">
+                  <img class="slide" src="assets/img/camera_wall.jpg" alt="">
+                  <img class="slide" src="assets/img/cameras.jpg" alt="">
+                  <img class="slide" src="assets/img/camera_wall.jpg" alt="">
+                </div>
+                <button class="prev" onClick="prevSlide()">&#10094</button>
+                <button class="next" onClick="nextSlide()">&#10095</button>
+
               </div>
 
 
@@ -1138,7 +1139,7 @@
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="slider.js"></script>
+    
     <script src="assets/js/main.js"></script>
   </body>
 </html>
